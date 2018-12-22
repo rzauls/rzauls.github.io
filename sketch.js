@@ -7,7 +7,7 @@ function setup() {
     createCanvas(800, 600);
     slider = createSlider(1, 30, 1);
     slider.position(145, 570);
-    typeSlider = createSlider(1, 3, 1);
+    typeSlider = createSlider(1, 4, 1);
     typeSlider.position(150, 3);
 }
 
@@ -63,9 +63,7 @@ function draw() {
             stroke(0, 255, 0);
             line(prevx, prevy, x, y);
         }
-    }
-
-    else if (typeSlider.value() === 3) {
+    } else if (typeSlider.value() === 3) {
         // reverse sawtooth
         typeName = "Rev. Saw";
         for (let i = 0; i < slider.value(); i++) { //square series
@@ -87,10 +85,29 @@ function draw() {
             stroke(0, 255, 0);
             line(prevx, prevy, x, y);
         }
+    } else if (typeSlider.value() === 4) {
+        // reverse sawtooth
+        typeName = "Triangle";
+        for (let i = 0; i < slider.value(); i++) { //square series
+            // movement
+            let prevx = x;
+            let prevy = y;
+            let n = 2 * i + 1;
+            let radius = 150 * Math.pow(-1,i) * Math.pow(n,-2);
+            x += radius * cos(n * time);
+            y += radius * sin(n * time);
+
+
+            // rings
+            stroke(255, 100);
+            noFill();
+            ellipse(prevx, prevy, radius * 2);
+
+            // branch
+            stroke(0, 255, 0);
+            line(prevx, prevy, x, y);
+        }
     }
-
-
-
 
     wave.unshift(y); // add new y value to the start of main array
 
@@ -121,5 +138,5 @@ function draw() {
     stroke(50, 90);
     line(-380, 0, 380, 0);
     line(0, 250, 0, -250);
-    time += 0.03; // theta
+    time += 0.035; // theta
 }
