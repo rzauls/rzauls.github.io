@@ -1,7 +1,7 @@
 let time = 0;
 
 function setup() {
-    createCanvas(1600, 900, WEBGL);
+    createCanvas(1000, 800, WEBGL);
 }
 
 function draw() {

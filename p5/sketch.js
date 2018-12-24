@@ -6,9 +6,9 @@ let slider;
 function setup() {
     createCanvas(800, 600);
     slider = createSlider(1, 30, 1);
-    slider.position(145, 570);
+    slider.position(153, 578);
     typeSlider = createSlider(1, 4, 1);
-    typeSlider.position(150, 3);
+    typeSlider.position(158, 11);
 }
 
 
