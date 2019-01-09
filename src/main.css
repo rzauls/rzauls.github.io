@@ -29,6 +29,10 @@ h1 {
     padding: 10px;
 }
 
+#note-text {
+    background:  rgb(255, 231, 165);
+}
+
 .row {
     display: flex;
     padding: 10px;
