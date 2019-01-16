@@ -1,0 +1,17 @@
+.link-list {
+    display:flex;
+    flex-direction: column;
+}
+
+.link-list > li:nth-child(odd) {
+    background: rgb(228, 228, 228)
+}
+
+.link-list li {
+    padding: 1em;
+    list-style-type: none;
+}
+
+.link-list li:hover {
+    background: rgb(255, 231, 165)
+}
