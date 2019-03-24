@@ -131,7 +131,7 @@ function draw() {
   text("Type: " + typeName, -390, -280);
   fill(255);
   textSize(20);
-  text("Harmonies: " + slider.value(), -390, 290);
+  text("Harmonics: " + slider.value(), -390, 290);
   // draw coords
   stroke(50, 90);
   line(-380, 0, 380, 0);
