@@ -93,6 +93,7 @@ a {
 .link-list li {
     padding: 1em;
     list-style-type: none;
+    transition: 0.2s;
 }
 
 .link-list li:hover {
