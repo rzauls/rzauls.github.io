@@ -1,6 +1,14 @@
-// const burger = document.querySelector(".burger");
-// const menu = document.querySelector(`#${burger.dataset.target}`);
-// burger.addEventListener("click", () => {
-//   burger.classList.toggle("is-active");
-//   menu.classList.toggle("is-active");
-// });
+$('a[href^="#"]').on("click", function(event) {
+  var target = $(this.getAttribute("href"));
+  if (target.length) {
+    event.preventDefault();
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: target.offset().top
+        },
+        1000
+      );
+  }
+});
