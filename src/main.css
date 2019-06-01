@@ -15,66 +15,75 @@ red/pink highlight:
 
 html,
 body {
-  font-family: "Raleway", sans-serif;
-  color: #4a4e4d;
-  height: 100%;
-  width: 100%;
-  transition: 0.2s;
+    font-family: "Raleway", sans-serif;
+    color: #4a4e4d;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
 }
 
 .intro-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-container {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .highlight {
-  color: #3da4ab;
-  opacity: 0.85;
-  transition: 0.2s;
+    color: #3da4ab;
+    opacity: 0.85;
+    transition: 0.2s;
 }
 
 .highlight:hover {
-  opacity: 1;
-  color: #0e9aa7;
+    opacity: 1;
+    color: #0e9aa7;
 }
 
 .fa {
-  color: #3da4ab;
-  text-align: center;
-  text-decoration: none;
-  opacity: 0.85;
-  transition: 0.2s;
+    color: #3da4ab;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: 0.2s;
 }
 
 .fa:hover {
-  color: #0e9aa7;
-  opacity: 1;
-  text-decoration: none;
+    color: #0e9aa7;
+    opacity: 1;
+    text-decoration: none;
 }
 
 #more-button {
-  font-size: 1.5em;
-  margin-top: 3em;
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+
+.icon-large {
+    font-size: 8em;
+    margin: 0.1em;
+}
+
+.subtitle {
+    font-size: 1.5em;
 }
 
 /* media queries */
 @media (max-width: 768px) {
-  .intro-container {
-    font-size: 2em;
-  }
+    #more-button {
+        margin-top: 2em;
+    }
 
-  #more-button {
-      margin-top: 2em;
-  }
+    .socials > .fa {
+        padding-top: 0.3em;
+        font-size: 2.5em;
+    }
 
-  .fa {
-    padding-top: 0.3em;
-    font-size: 1.5em;
-  }
+    .intro-container {
+        font-size: 2em;
+    }
 }
