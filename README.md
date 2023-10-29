@@ -1,2 +1,2 @@
-# rzauls.github.io (rzauls.com)
+# rzauls.github.io
 Personal website
