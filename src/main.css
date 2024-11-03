@@ -1,8 +1,10 @@
 html,
 body {
+    --black: #1f2328;
+    --black-hover: #393f46;
     background: white;
     font-family: "Raleway", sans-serif;
-    color: #4a4e4d;
+    color: var(--black);
     height: 100%;
     width: 100%;
     transition: 0.2s;
@@ -10,10 +12,13 @@ body {
 
 section {
     height: 100%;
+    width: fit-content;
+    margin: auto;
 }
 
 .intro-container {
     height: 100%;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +26,7 @@ section {
     font-size: 3em;
 }
 .icon-box {
-    width: 20%;
+    width: 25%;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -29,18 +34,19 @@ section {
 }
 
 .highlight {
-    color: #3da4ab;
+    color: var(--black);
     opacity: 0.85;
     transition: 0.2s;
 }
 
 .highlight:hover {
     opacity: 1;
-    color: #0e9aa7;
+    transition: 0.2s;
+    color: var(--black-hover);
 }
 
 .fa {
-    color: #3da4ab;
+    color: var(--black);
     text-align: center;
     text-decoration: none;
     opacity: 0.85;
@@ -48,7 +54,7 @@ section {
 }
 
 .fa:hover {
-    color: #0e9aa7;
+    color: var(--black-hover);
     opacity: 1;
     text-decoration: none;
 }
